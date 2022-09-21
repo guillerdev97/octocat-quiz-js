@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 18vh;
+    background-color: #773295;
+}
+header h1 {
+    margin-left: 30px;
+    margin-right: 100px;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+header h2 {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
