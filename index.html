@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Octocat Quiz</title>
-    <link rel="stylesheet" type="text/css" href="./css/styleswelcome.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
+
 <body>
-    <h1>¡Estás a punto de rescatar a Octocat!</h1>
 
+    <header>
+        <h1>ESTÁS A PUNTO DE RESCATAR A OCTOCAT!</h1>
+        <div>
+            <h2 id="player">Equipo en juego:</h2>
+        </div>
+    </header>
 
-    <script src="./js/welcome.js" type="text/javascript"></script>
+    <main>
+        <div class="inputContainer">
+            <div>
+                <label for="playerName">Nombre del equipo:</label><br><br>
+                <input type="text" id="playerName" name="playerName">
+                <button type="button" id="addButton" class="addButton">👍</button>
+            </div>
+        </div>
+        <div class="questionsContainer">
+            <div class="questionHeader">
+                <h3 id="questionText">Question text</h3>
+            </div>
+            <div class="questionBody">
+                <ul class="questionsList">
+                    <li>
+                        <label for="questionA" id="questionA">Question</label>
+                        <input type="radio" name="answer" id="questionA" value="a">
+                    </li>
+                    <li>
+                        <label for="questionB" id="questionB">Question</label>
+                        <input type="radio" name="answer" id="questionB" value="b">
+                    </li>
+                    <li>
+                        <label for="questionC" id="questionC">Question</label>
+                        <input type="radio" name="answer" id="questionC" value="c">
+                    </li>
+                </ul>
+                <button type="button" id="submitButton" class="submitButton">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Octocat te espera impaciente <span>😻</span></p>
+    </footer>
+
+    <script src="./js/app.js" type="module"></script>
 </body>
+
 </html>
