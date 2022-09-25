@@ -19,3 +19,7 @@ header h2 {
     letter-spacing: 1px;
     font-weight: bold;
 }
+img {
+    width: 10%;
+    margin-left: 10px;
+}
